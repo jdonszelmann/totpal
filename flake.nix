@@ -16,7 +16,7 @@
       ]);
     in
     {
-      packages."x86_64-linux".default = pkgs.writeScriptBin "totpal" ''
+      packages."x86_64-linux".default = pkgs.writeShellScriptBin "totpal" ''
         ${py}/bin/python3 ${./server.py} ${./index.html}
       '';
     };
