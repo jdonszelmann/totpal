@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8" />
+    <title>two of these people are lying</title>
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>two of these people are lying</h1>
+
+    <form method="POST" action="/submit">
+        <label for="article">
+            <input name="article" type="text">
+        </label>
+        <button type="submit">submit</button>
+    </form>
+
+    <a href="/random">get random article</a>
+    <a href="/all">get all submitted articles, in a random order</a>
+    <a href="/reset">reset</a>
+</body>
+
+</html>
