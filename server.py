@@ -38,7 +38,7 @@ def all():
 def rest():
     global articles
     articles = []
-    return "rest OK (jonathan can't spell sorry)"
+    return "rest OK (jana can't spell sorry)"
 
 
 if __name__ == '__main__':
