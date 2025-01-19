@@ -8,7 +8,7 @@ articles = []
 
 @app.route("/")
 def home():
-    return Response(open(sys.argv[1]).read(), mimetype="text/html")
+    return Response(open(sys.argv[1]).read().replace("NUMBER", str(len(articles))), mimetype="text/html")
 
 @app.route('/submit', methods=['POST'])
 def submit():
